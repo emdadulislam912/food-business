@@ -14,7 +14,8 @@ img{
 }
 /* Hero section */
 #hero{
-    background-image: linear-gradient(0.00deg, rgb(16, 16, 16) -19.5%, rgba(16, 16, 16, 0) 100%), url(assets/hero-bg.png);
+    /* background-image: linear-gradient(0.00deg, rgb(16, 16, 16) 0%, rgba(16, 16, 16, 0) 100%), url(assets/hero-bg.png); */
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.6)), url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -104,10 +105,56 @@ img{
     font-size: 2rem;
     font-weight: bold;
     margin: 1rem;
+    text-align: center;
 }
 .desOnCard{
     font-size: 1.2rem;
     color: hsl(0, 0%, 41%);
     text-align: center;
 }
-/* Section About */
+/* Section about starts here */
+.aboutUs{
+    display: flex;
+    width: 100%;
+}
+.aboutImage{
+    width: 50%;
+}
+.avoutDiv{
+    width: 50%;
+}
+.aboutHeadLn{
+    font-size: 2rem;
+    padding: 5% 22%;
+    text-align: center;
+}
+.subscription{
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 40%);
+    text-align: center;
+    margin: 2%;
+}
+.callToAction{
+    font-size: 1.4rem;
+    text-align: center;
+    border-top:1px solid;
+    border-bottom: 1px solid;
+    padding: 0.6rem;
+}
+.icons{
+    text-align: center;
+    margin: 2rem;
+}
+.fa-facebook{
+    color: rgb(78, 78, 255);
+    margin: 1%
+}
+.fa-square-x-twitter{
+    color: rgb(0, 0, 0);
+    margin: 1%
+}
+.fa-instagram{
+    color: rgb(255, 0, 0);
+    margin: 1%
+}
+/* Section about ends here */
