@@ -14,7 +14,6 @@ img{
 }
 /* Hero section */
 #hero{
-    /* background-image: linear-gradient(0.00deg, rgb(16, 16, 16) 0%, rgba(16, 16, 16, 0) 100%), url(assets/hero-bg.png); */
     background-image: linear-gradient(hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.6)), url(assets/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -62,7 +61,6 @@ img{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
 }
 .card-box{
     display: flex;
@@ -115,24 +113,34 @@ img{
 /* Section about starts here */
 .aboutUs{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    box-shadow: 0 0 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
 }
 .aboutImage{
     width: 50%;
+    /* margin-right: 1rem;
+    box-shadow: 0 0 1rem; */
 }
 .avoutDiv{
     width: 50%;
+    /* margin-left: 1rem;
+    box-shadow: 0 0 1rem; */
 }
 .aboutHeadLn{
     font-size: 2rem;
-    padding: 5% 22%;
+    padding: 4% 22%;
     text-align: center;
+    margin-top: 2rem;
 }
 .subscription{
     font-size: 1.6rem;
     color: hsl(0, 0%, 40%);
     text-align: center;
-    margin: 2%;
+    margin-top: 2%;
 }
 .callToAction{
     font-size: 1.4rem;
@@ -140,10 +148,11 @@ img{
     border-top:1px solid;
     border-bottom: 1px solid;
     padding: 0.6rem;
+    margin: 2rem 0;
 }
 .icons{
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 .fa-facebook{
     color: rgb(78, 78, 255);
@@ -158,3 +167,32 @@ img{
     margin: 1%
 }
 /* Section about ends here */
+
+@media screen and (max-width: 767px){
+    
+    .card-box{
+        flex-direction: column;
+    }
+    .aboutUs{
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .aboutImage{
+        width: 100%;
+        box-shadow: 0 0 1rem;
+        border-radius: 4px;
+        /* margin-top: 2rem; */
+        overflow: hidden;
+        padding: 3%;
+    }
+    .avoutDiv{
+        width: 100%;
+        box-shadow: 0 0 1rem;
+        margin: 2rem 0 1rem 0;
+        border-radius: 4px;
+    }
+    img{
+        border-radius: 4px;
+    }
+}
